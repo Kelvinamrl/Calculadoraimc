@@ -4,105 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fundo"
     tools:context=".MainActivity">
 
-    <!-- Header Section -->
     <LinearLayout
         android:id="@+id/vg_header"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_marginBottom="24dp"
+        android:layout_height="250dp"
         android:background="@drawable/gradient_bg"
-        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Image View for weight -->
         <ImageView
-            android:src="@drawable/ic_weight"
-            android:layout_width="48dp"
-            android:layout_marginTop="16dp"
-            android:layout_height="48dp"
+            android:layout_width="67dp"
+            android:layout_height="73dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="16dp"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_weight"
+            app:tint="@color/superior" />
 
-        <!-- Title Text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:text="CALCULADORA IMC"
-            android:textSize="24sp"
-            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/superior"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
-        <!-- Subtitle Text -->
         <TextView
             android:layout_width="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="48dp"
-            android:textStyle="bold"
             android:text="Preencha todos os campos para calcular seu IMC"
-            android:textColor="@color/white" />
+            android:textColor="@color/superior"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!-- Calcular Button -->
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
-        android:layout_margin="16dp"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:theme="@style/button"
         android:text="Calcular"
+        android:textColor="@color/superior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Peso Input Field -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:hintEnabled="false"
         app:layout_constraintTop_toBottomOf="@id/vg_header">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_peso"
-            android:drawableEnd="@drawable/ic_weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="6"
             android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/ic_weight"
             android:hint="Digite seu peso ex: 70.200"
-            android:inputType="numberDecimal" />
+            android:textColor="@color/superior"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Altura Input Field -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:hintEnabled="false"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_altura"
-            android:drawableEnd="@drawable/ic_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="4"
             android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/ic_height"
+            android:textColor="@color/superior"
+            android:hint="Digite sua altura ex: 1.70"
             android:inputType="numberDecimal"
-            android:hint="Digite sua altura ex: 1.70" />
+            android:maxLength="4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="318dp"
+            android:layout_gravity="center"
+            android:src="@drawable/capa2" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -5,7 +5,7 @@ Esse projeto é um aplicativo android nativo, criado com a linguagem de programa
 <!-- You can add more screenshots here if you like -->
 Screenshots
 
-<img src="https://github.com/user-attachments/assets/8293052a-7729-4d5a-9683-ca9cff8f7748" width=260/> <img src="https://github.com/user-attachments/assets/6ab94f5f-c460-400d-90da-658003170bc4" width=260/>
+<img src="https://github.com/user-attachments/assets/715de585-15d2-47d9-9ff3-09cd8acc0069" width =160 /> <img src="https://github.com/user-attachments/assets/89433390-bf84-4306-a562-5a1f73959c38" width =160 /> <img src="https://github.com/user-attachments/assets/92f5ec57-b823-4bc0-85ad-d599f4bcefdf" width =160 /> <img src="https://github.com/user-attachments/assets/8151aae2-c2c1-4531-9873-62e5fb703bf5" width =160 />
 
 
 ## Tecnologias
@@ -25,7 +25,7 @@ Screenshots
 ```
 The MIT License (MIT)
 
-Copyright (c) 2025 Kelvin Yuri Amaral
+Copyright (c) 2025 Kelvin Amaral
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

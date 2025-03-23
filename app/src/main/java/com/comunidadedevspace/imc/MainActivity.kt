@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val  edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
+        val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
 
         val Btncalcular = findViewById<Button>(R.id.btn_calcular)
@@ -21,11 +21,10 @@ class MainActivity : AppCompatActivity() {
         Btncalcular.setOnClickListener {
 
 
-
             val pesoStr: String = edtPeso.text.toString()
-            val alturaStr: String  = edtAltura.text.toString()
+            val alturaStr: String = edtAltura.text.toString()
 
-            if(pesoStr == "" || alturaStr == ""){
+            if (pesoStr == "" || alturaStr == "") {
                 Snackbar.make(
                     edtPeso,
                     "Preencha todos os campos",
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 )
                     .show()
 
-            }else{
+            } else {
                 val peso = pesoStr.toFloat()
                 val altura = alturaStr.toFloat()
 
@@ -41,14 +40,10 @@ class MainActivity : AppCompatActivity() {
                 val resultado = peso / alturaq2
 
 
-
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(KEY_RESULT_IMC, resultado)
                 startActivity(intent)
 
-                // Cores
-                // EditText bakground + icone
-                // Gradiente + icone + titulo + descrição
 
             }
         }
